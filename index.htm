@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba de la segunda Unidad software</title>
+    
+    <style>
+        :root {
+            --primary-color: #1a365d;
+            --secondary-color: #2b6cb0;
+            --accent-color: #ebf8ff;
+            --text-main: #2d3748;
+            --text-light: #4a5568;
+            --bg-page: #f7fafc;
+            --bg-card: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-page);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 2rem auto;
+            background-color: var(--bg-card);
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 2.5rem 2rem;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            letter-spacing: 1px;
+        }
+
+        .header h2 {
+            margin: 10px 0 0 0;
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: var(--accent-color);
+        }
+
+        .menu-section {
+            padding: 2rem;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .menu-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.2rem;
+            background-color: var(--accent-color);
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            border-radius: 8px;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .menu-item:hover {
+            background-color: var(--secondary-color);
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(43, 108, 176, 0.3);
+        }
+
+        .submenu-group {
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 1rem;
+            grid-column: 1 / -1; 
+        }
+
+        .submenu-group h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            text-align: center;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+        }
+
+        .submenu-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            justify-content: center;
+        }
+
+        .submenu-item {
+            padding: 0.5rem 1rem;
+            background-color: white;
+            color: var(--secondary-color);
+            text-decoration: none;
+            border-radius: 5px;
+            border: 1px solid #cbd5e0;
+            font-size: 0.95rem;
+            transition: all 0.2s ease;
+        }
+
+        .submenu-item:hover {
+            background-color: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+
+        .author-info {
+            background-color: #edf2f7;
+            padding: 1.5rem 2rem;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .author-info h3 {
+            margin: 0 0 1rem 0;
+            color: var(--primary-color);
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .info-item {
+            margin: 0;
+            color: var(--text-light);
+            font-size: 1rem;
+        }
+
+        .info-item strong {
+            color: var(--text-main);
+            display: block;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.2rem;
+        }
+
+        @media (max-width: 600px) {
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <header class="header">
+            <h1>Prueba de la Segunda Unidad Software</h1>
+            <h2>Validando la segunda unidad de ingenieria de software</h2>
+        </header>
+
+        <section class="menu-section">
+            <div class="menu-grid">
+                
+                <a href="Crucigrama.htm" class="menu-item">1. Crucigrama de Conceptos</a>
+                <a href="emparejarpalabras.htm" class="menu-item">2. Emparejar Palabras</a>
+                <a href="llenarespaciosvacios.htm" class="menu-item">3. Llenar Espacios Vacios</a>
+                <a href="quiz.htm" class="menu-item">4. Quiz de Conocimiento</a>
+
+                <div class="submenu-group">
+                    <h3>5. Ordenar las Oraciones</h3>
+                    <div class="submenu-links">
+                        <a href="Ordenalaoracion.htm" class="submenu-item">Oracion 1</a>
+                        <a href="Ordenalaoracion2.htm" class="submenu-item">Oracion 2</a>
+                        <a href="Ordenalaoracion3.htm" class="submenu-item">Oracion 3</a>
+                        <a href="Ordenalaoracion4.htm" class="submenu-item">Oracion 4</a>
+                        <a href="Ordenalaoracion5.htm" class="submenu-item">Oracion 5</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <footer class="author-info">
+            <h3>Quien lo hizo</h3>
+            <div class="info-grid">
+                <p class="info-item"><strong>Elaborado por</strong> Luis Enmanuel Zelaya O'meany</p>
+                <p class="info-item"><strong>Carnet</strong> 2023-0301I</p>
+                <p class="info-item"><strong>Grupo</strong> 4T2</p>
+                <p class="info-item"><strong>Carrera</strong> Ingenieria de Sistemas - UNI</p>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" prefix="dc: http://purl.org/dc/elements/1.1/">
+<head><meta name="author" content="Created with Hot Potatoes by Half-Baked Software, registered to luis."/><meta name="keywords" content="Hot Potatoes, Hot Potatoes, Half-Baked Software, Windows, University of Victoria"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+<meta name="dc:creator" content="luis" />
+<meta name="dc:title" content="conceptos para emparejar o completar" />
+
+
+
+<title>
+conceptos para emparejar o completar
+</title>
+
+<!-- Made with executable version 7.0 Release 3 Build 0 -->
+
+<!-- The following insertion allows you to add your own code directly to this head tag from the configuration screen -->
+
+
+
+<style>
+
+
+/* This is the CSS stylesheet used in the exercise. */
+/* Elements in square brackets are replaced by data based on configuration settings when the exercise is built. */
+
+/* BeginCorePageCSS */
+
+/* Made with executable version 7.0 Release 3 Build 0 */
+
+
+
+/* CSS variables for colours. */
+/* VARIABLES DE DISEÑO UI/UX MODERNIZADO */
+:root {
+    --primary-color: #1a365d;
+    --secondary-color: #2b6cb0;
+    --accent-color: #ebf8ff;
+    --bg-page: #f7fafc;
+    --text-main: #2d3748;
+    --text-light: #718096;
+    --strFontFace: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --strTitleColor: #1a365d;
+    --strTextColor: #2d3748;
+    --strPageBGColor: #f7fafc;
+    --strExBGColor: #ffffff;
+    --strNavBarColor: #ffffff;
+    --strNavTextColor: #2b6cb0;
+}
+
+body {
+    font-family: var(--strFontFace);
+    background-color: var(--bg-page);
+    color: var(--text-main);
+    margin: 0;
+    padding: 0 0 2em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+p {
+    text-align: left;
+    margin: 0px;
+    font-size: 1em;
+}
+
+table, div, span, td {
+    font-size: 1em;
+    color: var(--text-main);
+}
+
+/* ENCABEZADOS Y TÍTULOS */
+div.Titles {
+    padding: 2em 1em 1em 1em;
+    text-align: center;
+    color: var(--primary-color);
+    width: 100%;
+}
+
+.ExerciseTitle {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin: 0;
+    font-weight: bold;
+}
+
+.ExerciseSubtitle {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    margin-top: 0.5em;
+    font-weight: normal;
+}
+
+/* CONTENEDORES PRINCIPALES (Efecto Tarjeta) */
+div.StdDiv, div.ExerciseContainer {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 2em;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    margin-bottom: 2em;
+    width: 90%;
+    max-width: 800px;
+    box-sizing: border-box;
+    border: none;
+}
+
+div#ContainerDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* BARRAS DE NAVEGACIÓN SUPERIOR E INFERIOR */
+div.NavButtonBar {
+    width: 100%;
+    background-color: white;
+    padding: 15px 5%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    box-sizing: border-box;
+}
+
+/* BOTONES UI/UX */
+button, .FuncButton, .NavButton {
+    font-family: var(--strFontFace);
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(43, 108, 176, 0.2);
+    margin: 10px 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+button:hover, .FuncButton:hover, .NavButton:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(26, 54, 93, 0.3);
+    color: white;
+}
+
+button:active, .FuncButton:active, .NavButton:active {
+    transform: translateY(0);
+}
+
+.NavButton {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+}
+
+.NavButton:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* ESTILOS ESPECÍFICOS PARA EMPAREJAR (JMATCH) */
+table.MatchTable {
+    margin: 2em auto;
+    border-collapse: separate;
+    border-spacing: 0 15px; /* Espacio entre las filas */
+    width: 100%;
+}
+
+.LeftItem {
+    font-size: 1.1em;
+    color: var(--primary-color);
+    text-align: right;
+    padding: 15px 20px;
+    background-color: var(--accent-color);
+    border-radius: 8px;
+    font-weight: bold;
+    width: 35%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.RightItem {
+    text-align: left;
+    padding-left: 15px;
+    width: 65%;
+}
+
+/* ESTILO DE LOS SELECTORES (Desplegables) */
+select {
+    font-size: 1em;
+    font-family: var(--strFontFace);
+    padding: 12px;
+    border: 2px solid #cbd5e0;
+    border-radius: 8px;
+    width: 100%;
+    background-color: white;
+    color: var(--text-main);
+    cursor: pointer;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    white-space: normal; /* Permite que el texto largo se ajuste */
+}
+
+select:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 3px rgba(43,108,176,0.2);
+}
+
+select option {
+    padding: 5px;
+}
+
+/* INDICADORES DE ACIERTO/ERROR */
+td[id^="L_"] + td + td {
+    font-size: 1.5em;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+/* MODAL DE FEEDBACK */
+div.Feedback {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    border: 1px solid #e2e8f0;
+    padding: 2em;
+    text-align: center;
+    color: var(--text-main);
+    position: fixed;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 1000;
+    width: 90%;
+    max-width: 400px;
+}
+
+.FeedbackText {
+    font-size: 1.1rem;
+    margin-bottom: 1.5em;
+    color: var(--primary-color);
+}
+
+</style>
+
+<script>
+
+//<![CDATA[
+
+<!--
+
+
+
+
+//CODE FOR HANDLING NAV BUTTONS AND FUNCTION BUTTONS
+
+function FocusAButton(){
+	if (document.getElementById('CheckButton1') != null){
+		document.getElementById('CheckButton1').focus();
+	}
+	else{
+		if (document.getElementById('CheckButton2') != null){
+			document.getElementById('CheckButton2').focus();
+		}
+		else{
+			document.getElementsByTagName('button')[0].focus();
+		}
+	}
+}
+
+
+
+
+//CODE FOR HANDLING DISPLAY OF POPUP FEEDBACK BOX
+
+var topZ = 1000;
+
+function ShowMessage(Feedback){
+	var Output = Feedback + '<br /><br />';
+	document.getElementById('FeedbackContent').innerHTML = Output;
+	var FDiv = document.getElementById('FeedbackDiv');
+	topZ++;
+	FDiv.style.zIndex = topZ;
+	FDiv.style.top = TopSettingWithScrollOffset(30) + 'px';
+
+	FDiv.style.display = 'block';
+
+	ShowElements(false, 'input');
+	ShowElements(false, 'select');
+	ShowElements(false, 'object');
+	ShowElements(true, 'object', 'FeedbackContent');
+
+//Focus the OK button
+	setTimeout("document.getElementById('FeedbackOKButton').focus()", 50);
+	
+//
+}
+
+function ShowElements(Show, TagName, ContainerToReverse){
+// added third argument to allow objects in the feedback box to appear
+//IE bug -- hide all the form elements that will show through the popup
+//FF on Mac bug : doesn't redisplay objects whose visibility is set to visible
+//unless the object's display property is changed
+
+	//get container object (by Id passed in, or use document otherwise)
+	TopNode = document.getElementById(ContainerToReverse);
+	var Els;
+	if (TopNode != null) {
+		Els = TopNode.getElementsByTagName(TagName);
+	} else {
+		Els = document.getElementsByTagName(TagName);
+	}
+
+	for (var i=0; i<Els.length; i++){
+		if (TagName == "object") {
+			//manipulate object elements in all browsers
+			if (Show == true){
+				Els[i].style.visibility = 'visible';
+			}
+			else{
+				Els[i].style.visibility = 'hidden';
+			}
+		} 
+	}
+}
+
+
+
+function HideFeedback(){
+	document.getElementById('FeedbackDiv').style.display = 'none';
+	ShowElements(true, 'input');
+	ShowElements(true, 'select');
+	ShowElements(true, 'object');
+}
+
+
+//GENERAL UTILITY FUNCTIONS AND VARIABLES
+
+//PAGE DIMENSION FUNCTIONS
+function PageDim(){
+//Get the page width and height
+	this.W = 600;
+	this.H = 400;
+	this.W = document.getElementsByTagName('body')[0].offsetWidth;
+	this.H = document.getElementsByTagName('body')[0].offsetHeight;
+}
+
+var pg = null;
+
+function GetPageXY(El) {
+	var XY = {x: 0, y: 0};
+	while(El){
+		XY.x += El.offsetLeft;
+		XY.y += El.offsetTop;
+		El = El.offsetParent;
+	}
+	return XY;
+}
+
+function GetScrollTop(){
+	if (typeof(window.pageYOffset) == 'number'){
+		return window.pageYOffset;
+	}
+	else{
+		if ((document.body)&&(document.body.scrollTop)){
+			return document.body.scrollTop;
+		}
+		else{
+			if ((document.documentElement)&&(document.documentElement.scrollTop)){
+				return document.documentElement.scrollTop;
+			}
+			else{
+				return 0;
+			}
+		}
+	}
+}
+
+function GetViewportHeight(){
+	if (typeof window.innerHeight != 'undefined'){
+		return window.innerHeight;
+	}
+	else{
+		if (((typeof document.documentElement != 'undefined')&&(typeof document.documentElement.clientHeight !=
+     'undefined'))&&(document.documentElement.clientHeight != 0)){
+			return document.documentElement.clientHeight;
+		}
+		else{
+			return document.getElementsByTagName('body')[0].clientHeight;
+		}
+	}
+}
+
+function TopSettingWithScrollOffset(TopPercent){
+	var T = Math.floor(GetViewportHeight() * (TopPercent/100));
+	return GetScrollTop() + T; 
+}
+
+//CODE FOR AVOIDING LOSS OF DATA WHEN BACKSPACE KEY INVOKES history.back()
+var InTextBox = false;
+
+function SuppressBackspace(e){ 
+	if (InTextBox == true){return;}
+	thisKey = e.keyCode;
+
+	var Suppress = false;
+
+	if (thisKey == 8) {
+		Suppress = true;
+		e.preventDefault();
+	}
+}
+
+window.addEventListener('keypress',SuppressBackspace,false);
+
+function ReduceItems(InArray, ReduceToSize){
+	var ItemToDump=0;
+	var j=0;
+	while (InArray.length > ReduceToSize){
+		ItemToDump = Math.floor(InArray.length*Math.random());
+		InArray.splice(ItemToDump, 1);
+	}
+}
+
+function Shuffle(InArray){
+	var Num;
+	var Temp = new Array();
+	var Len = InArray.length;
+
+	var j = Len;
+
+	for (var i=0; i<Len; i++){
+		Temp[i] = InArray[i];
+	}
+
+	for (i=0; i<Len; i++){
+		Num = Math.floor(j  *  Math.random());
+		InArray[i] = Temp[Num];
+
+		for (var k=Num; k < (j-1); k++) {
+			Temp[k] = Temp[k+1];
+		}
+		j--;
+	}
+	return InArray;
+}
+
+function WriteToInstructions(Feedback) {
+	document.getElementById('InstructionsDiv').innerHTML = Feedback;
+
+}
+
+
+
+
+function EscapeDoubleQuotes(InString){
+	return InString.replace(/"/g, '&quot;')
+}
+
+function TrimString(InString){
+        var x = 0;
+
+        if (InString.length != 0) {
+                while ((InString.charAt(InString.length - 1) == '\u0020') || (InString.charAt(InString.length - 1) == '\u000A') || (InString.charAt(InString.length - 1) == '\u000D')){
+                        InString = InString.substring(0, InString.length - 1)
+                }
+
+                while ((InString.charAt(0) == '\u0020') || (InString.charAt(0) == '\u000A') || (InString.charAt(0) == '\u000D')){
+                        InString = InString.substring(1, InString.length)
+                }
+
+                while (InString.indexOf('  ') != -1) {
+                        x = InString.indexOf('  ')
+                        InString = InString.substring(0, x) + InString.substring(x+1, InString.length)
+                 }
+
+                return InString;
+        }
+
+        else {
+                return '';
+        }
+}
+
+function FindLongest(InArray){
+	if (InArray.length < 1){return -1;}
+
+	var Longest = 0;
+	for (var i=1; i<InArray.length; i++){
+		if (InArray[i].length > InArray[Longest].length){
+			Longest = i;
+		}
+	}
+	return Longest;
+}
+
+//SELECTION OBJECT FOR TYPING WITH KEYPAD
+var selObj = null;
+            
+SelObj = function(box){
+	this.box = box;
+	this.selStart = this.box.selectionStart;
+	this.selEnd = this.box.selectionEnd;
+	this.selText = this.box.value.substring(this.selStart, this.selEnd);
+	return this;
+}
+
+function setSelText(newText){
+	var caretPos = this.selStart + newText.length;
+	var newValue = this.box.value.substring(0, this.selStart);
+	newValue += newText;
+	newValue += this.box.value.substring(this.selEnd, this.box.value.length);
+	this.box.value = newValue;
+	this.box.setSelectionRange(caretPos, caretPos);
+	this.box.focus();
+}
+SelObj.prototype.setSelText = setSelText;
+
+function setSelSelectionRange(start, end){
+	this.box.setSelectionRange(start, end);
+}
+SelObj.prototype.setSelSelectionRange = setSelSelectionRange;
+
+//UNICODE CHARACTER FUNCTIONS
+function IsCombiningDiacritic(CharNum){
+	var Result = (((CharNum >= 0x0300)&&(CharNum <= 0x370))||((CharNum >= 0x20d0)&&(CharNum <= 0x20ff)));
+	Result = Result || (((CharNum >= 0x3099)&&(CharNum <= 0x309a))||((CharNum >= 0xfe20)&&(CharNum <= 0xfe23)));
+	return Result;
+}
+
+function IsCJK(CharNum){
+	return ((CharNum >= 0x3000)&&(CharNum < 0xd800));
+}
+
+//SETUP FUNCTIONS
+//BROWSER WILL REFILL TEXT BOXES FROM CACHE IF NOT PREVENTED
+function ClearTextBoxes(){
+	var NList = document.getElementsByTagName('input');
+	for (var i=0; i<NList.length; i++){
+		if ((NList[i].id.indexOf('Guess') > -1)||(NList[i].id.indexOf('Gap') > -1)){
+			NList[i].value = '';
+		}
+		if (NList[i].id.indexOf('Chk') > -1){
+			NList[i].checked = '';
+		}
+	}
+}
+
+
+
+
+
+
+
+//JMATCH CORE JAVASCRIPT CODE
+
+var CorrectIndicator = '&#x2714;';
+var IncorrectIndicator = '&#x2718;';
+var YourScoreIs = 'Your score is ';
+var CorrectResponse = 'Correct! Well done.';
+var IncorrectResponse = 'Sorry! Try again. ';
+var TotalUnfixedLeftItems = 0;
+var TotCorrectChoices = 0;
+var Penalties = 0;
+var Finished = false;
+var TimeOver = false;
+
+var Score = 0;
+var Locked = false;
+var ShuffleQs = false;
+var QsToShow = 7;
+
+function TimerStartUp(){
+	setTimeout('JsonEx.Setup()', 300);
+}
+
+/*
+  The new V7 JSON object replaces the arrays of old.
+*/
+var V7JsonEx = '{  "ShuffleLeftItems": false,  "IsSimple": true,  "ItemsToShow": -1,  "LeftItems": [{"OrigPos": 0,     "Group": 0}, {"OrigPos": 1,     "Group": 1}, {"OrigPos": 2,     "Group": 2}, {"OrigPos": 3,     "Group": 3}, {"OrigPos": 4,     "Group": 4}, {"OrigPos": 5,     "Group": 5}, {"OrigPos": 6,     "Group": 6}],  "RightItems": [{"OrigPos": 0,     "Groups": [0], "MatchedWith": -1}, {"OrigPos": 1,     "Groups": [1], "MatchedWith": -1}, {"OrigPos": 2,     "Groups": [2], "MatchedWith": -1}, {"OrigPos": 3,     "Groups": [3], "MatchedWith": -1}, {"OrigPos": 4,     "Groups": [4], "MatchedWith": -1}, {"OrigPos": 5,     "Groups": [5], "MatchedWith": -1}, {"OrigPos": 6,     "Groups": [6], "MatchedWith": -1}]}';
+
+var JsonEx = JSON.parse(V7JsonEx);
+
+JsonEx.GetLeftItemByOrigPos = function(Pos){
+	for (var i=0; i<this.LeftItems.length; i++){
+		if (this.LeftItems[i].OrigPos == Pos){
+			return this.LeftItems[i];
+		}
+	}
+	return null;
+};
+
+JsonEx.GetRightItemByOrigPos = function(Pos){
+	for (var i=0; i<this.RightItems.length; i++){
+		if (this.RightItems[i].OrigPos == Pos){
+			return this.RightItems[i];
+		}
+	}
+	return null;
+};
+
+//Methods for the object.
+JsonEx.Setup = function(){
+	var i, j, nList, LI, RI;
+	
+
+
+
+
+
+
+//Get a reference to the table's tbody.
+	this.tbody = document.querySelector('tbody#MatchItems');
+	
+//Connect each of the items to its cell or select element.
+	for (var i=0; i<this.LeftItems.length; i++){
+		LI = this.LeftItems[i];
+		LI.Cell = document.getElementById('L_' + LI.OrigPos);
+		LI.Select = LI.Cell.nextElementSibling.getElementsByTagName('select')[0];
+		LI.MarkingCell = LI.Cell.nextElementSibling.nextElementSibling;
+//Now check whether this item is a distractor that shouldn't have a matching
+//right item.
+		LI.IsDistractor = (this.GetRightItemByOrigPos(LI.OrigPos) === null);
+	}
+
+	this.RightItems.forEach(function(RI){
+//Note: this doesn't really matter; the only thing that matters is 
+//the selected option and its match to the left item in the preceding
+//cell.
+		RI.Select = document.getElementById('R_' + RI.OrigPos);
+	});
+	
+//Reduce the items as required. Sanity check: don't allow less than 2.
+	if (this.ItemsToShow > 2){
+		while (this.LeftItems.length > this.ItemsToShow){
+			RemItem = Math.floor(this.LeftItems.length*Math.random());
+			OP = this.LeftItems[RemItem].OrigPos;
+//Remove the whole table row which is the parent of this left item.
+			var row = this.LeftItems[RemItem].Cell.parentNode;
+			row.parentNode.removeChild(row);
+			this.LeftItems.splice(RemItem, 1);
+
+//Having removed an item from the left, we must remove the corresponding 
+//one from the right if it exists. (There may not be a matching item if 
+//the one removed was a distractor.)
+			for (i = 0; i < this.RightItems.length; i++){
+				if (this.RightItems[i].OrigPos == OP){
+//Before removing the item itself, we need to remove its option
+//from all the select elements.
+					nList = document.querySelectorAll('option[data-origPos="R_' + OP + '"]');
+					for (var j=0; j<nList.length; j++){
+						nList[j].parentNode.removeChild(nList[j]);
+					}
+					this.RightItems.splice(i, 1);
+				}
+			}
+		}
+	}
+//Now do any shuffling that's required.
+	if (this.ShuffleLeftItems == true){
+		var arrRows = new Array();
+		var rows = this.tbody.getElementsByTagName('tr');
+		for (i=rows.length-1; i>=0; i--){
+			arrRows.push(this.tbody.removeChild(rows[i]));
+		}
+		arrRows = Shuffle(arrRows);
+		for (i=0; i<arrRows.length; i++){
+			this.tbody.appendChild(arrRows[i]);
+		}
+	}
+	
+//Now get a reference to all selectors, since distractors may not be associated
+//with a right item.
+	this.AllSelects = document.querySelectorAll('select[id^="R_"]');
+	
+//Now we check for any select that should be pre-selected (fixed item).
+	for (i = 0; i<this.AllSelects.length; i++){
+		var Sel = this.AllSelects[i];
+		var Pos = parseInt(Sel.id.substring(2));
+		var RI = this.GetRightItemByOrigPos(Pos);
+		if ((RI)&&(RI.MatchedWith > -1)){
+			for (var j=0; j<Sel.options.length; j++){
+				if (Sel.options[j].value == Pos){
+					Sel.options.selectedIndex = j;
+					Sel.dispatchEvent(new Event("change", {"bubbles": true}));
+					break;
+				}
+			}
+		}
+	}
+
+	
+
+};
+
+JsonEx.AlignSelects = function(OrigPos){
+	var Select = document.getElementById('R_' + OrigPos);
+	var CurrMatch = Select.options[Select.selectedIndex].value;
+	var RI = this.GetRightItemByOrigPos(OrigPos);
+	var i;
+	
+	//First we make sure that if this is unselecting
+	//a previous selection, we re-show all the corresponding
+	//items.
+	if ((!RI)||(RI.MatchedWith != CurrMatch)){
+		var lastMatch = RI? RI.MatchedWith : Select.getAttribute('data-LastMatch') ? Select.getAttribute('data-LastMatch') : -1;
+		for (i=0; i<this.AllSelects.length; i++){
+			if (Select !== this.AllSelects[i]){
+				var opt = this.AllSelects[i].querySelector('option[value="' + lastMatch + '"]');
+				opt.removeAttribute('disabled');
+			}
+		}
+	}
+	
+	//Store the current match either in the object or on the select if it's a distractor.
+	if (RI){
+		RI.MatchedWith = CurrMatch;
+	}
+	else{
+		Select.setAttribute('data-lastMatch', CurrMatch);
+	}
+	
+	//Now we hide any other instances of the selected option.
+	if (CurrMatch > -1){
+		for (i=0; i<this.AllSelects.length; i++){
+			if (Select !== this.AllSelects[i]){
+				this.AllSelects[i].querySelector('option[value="' + CurrMatch + '"]').disabled = 'disabled';
+			}
+		}
+	}
+};
+
+JsonEx.CheckAnswers = function(){
+/*
+	Check each right item to see whether a) it had an 
+	original match on the left, and b) it is matched
+	to a left item whose group is one of its groups.
+*/
+
+	if (!this.hasOwnProperty('Penalties')){
+		this.Penalties = 0;
+	}
+	var ItemsToCount = this.AllSelects.length;
+	var CorrectItems = 0;
+	var Done = true; //Assume till proven otherwise.
+	var i, selectedOrigPos, LI, RI;
+	
+//Tot up the scores.
+
+//Go through all the left items.
+	for (i=0; i<this.LeftItems.length; i++){
+		LI = this.LeftItems[i];
+//Get the selection made.
+
+			selectedOrigPos = LI.Select.options[LI.Select.options.selectedIndex].value;
+//First check whether the left item is a distractor, so nothing should
+//match with it.
+		if (LI.IsDistractor){
+			if (selectedOrigPos == -1){
+				LI.MarkingCell.innerHTML = CorrectIndicator;
+				if ((this.IsSimple)&&(LI.Select.style.display !== 'none')){
+					LI.Select.parentNode.appendChild(document.createTextNode(LI.Select.options[LI.Select.options.selectedIndex].innerText));
+					LI.Select.style.display = 'none';
+				}
+				CorrectItems++;
+			}
+			else{
+				LI.MarkingCell.innerHTML = IncorrectIndicator;
+				Done = false;
+			}
+		}
+		else{
+//If the LI is not a distractor, then no selection (-1) must be wrong.
+			if (selectedOrigPos == -1){
+				LI.MarkingCell.innerHTML = IncorrectIndicator;
+				Done = false;
+			}
+			else{
+//Otherwise a selection is expected, and its groups must match.	
+//Find the corresponding right item.
+				RI = this.GetRightItemByOrigPos(selectedOrigPos);	
+				if (RI.Groups.indexOf(LI.Group) > -1){
+				//Mark this right
+					LI.MarkingCell.innerHTML = CorrectIndicator;
+					if ((this.IsSimple)&&(LI.Select.style.display !== 'none')){
+						//LI.Select.parentNode.innerHTML = LI.Select.options[LI.Select.options.selectedIndex].innerText;
+						LI.Select.parentNode.appendChild(document.createTextNode(LI.Select.options[LI.Select.options.selectedIndex].innerText));
+						LI.Select.style.display = 'none';
+					}
+					CorrectItems++;
+				}
+				else{
+					LI.MarkingCell.innerHTML = IncorrectIndicator;
+					Done = false;
+				}
+			}
+		}
+	}
+
+	if (!this.hasOwnProperty('Score')){
+		this.Score = 0;
+	}
+	this.Score = Math.round((100*(CorrectItems - this.Penalties))/ItemsToCount);
+	if (Done === false){
+		this.Penalties++;
+	}
+	return Done;
+};
+
+function CheckAnswers(){
+	if (Locked == true){return;}
+	
+	var Feedback = '';
+
+	var AllDone = JsonEx.CheckAnswers();
+	Score = JsonEx.Score;
+	if (Score < 0){Score = 0;}
+
+	if (AllDone == true){
+		Feedback = YourScoreIs + ' ' + Score + '%.<br/>' + CorrectResponse;
+	}
+	else {
+		if (TimeOver == true){
+			Feedback = YourScoreIs + ' ' + Score + '%.'
+		}
+		else{
+			Feedback = YourScoreIs + ' ' + Score + '%.' + '<br />' + IncorrectResponse;
+		}
+	}
+	ShowMessage(Feedback);
+	
+//If the exercise is over, deal with that
+	if ((AllDone == true)||(TimeOver == true)){
+
+
+		TimeOver = true;
+		Locked = true;
+		Finished = true;
+		WriteToInstructions(Feedback);
+	}
+
+	
+}
+
+
+
+
+
+
+
+
+//-->
+
+//]]>
+
+</script>
+
+
+</head>
+
+<body onload="TimerStartUp()" id="TheBody" >
+
+<!-- BeginTopNavButtons -->
+
+
+<div class="NavButtonBar" id="TopNavBar">
+
+
+<button class="NavButton" onclick="history.back(); return false;">&lt;=</button>
+
+
+
+<button class="NavButton" onclick="location='index.htm'; return false;"> Index </button>
+
+
+
+<button class="NavButton" onclick="location='llenarespaciosvacios.htm'; return false;">=&gt;</button>
+
+
+</div>
+
+
+
+<!-- EndTopNavButtons -->
+
+<div class="Titles">
+	<h2 class="ExerciseTitle">conceptos para emparejar o completar</h2>
+
+	<h3 class="ExerciseSubtitle">Matching exercise</h3>
+
+
+
+</div>
+
+<div id="InstructionsDiv" class="StdDiv">
+	<div id="Instructions">Match the items on the right to the items on the left.</div>
+</div>
+<div id="ContainerDiv">
+
+
+
+<div class="ExerciseContainer">
+
+<button id="CheckButton1" class="FuncButton" onclick="CheckAnswers()">&#160;Check&#160;</button>
+
+<div id="MatchDiv" style="text-align: center;">
+
+<table class="MatchTable">
+<tbody id="MatchItems">
+<tr><td id="L_0" class="LeftItem">Regresion</td>
+<td class="RightItem">
+<select onchange="JsonEx.AlignSelects(0)" id="R_0">
+<option value="-1">???</option>
+<option value="1" data-origPos="R_1">Unica manera de repetir todas las pruebas sobre sistemas complejos y grandes.</option>
+<option value="4" data-origPos="R_4">Se caracteriza porque el autor del documento bajo revision va guiando al resto de participantes a traves del documento exponiendo sus ideas.</option>
+<option value="2" data-origPos="R_2">Es el responsable de identificar y definir las pruebas requeridas.</option>
+<option value="0" data-origPos="R_0">Mala conducta de una funcion, atributo o caracteristica previamente correctos.</option>
+<option value="5" data-origPos="R_5">Son una estrategia de pruebas estructurales cuyo objetivo es probar cada camino de la ejecucion independientemente.</option>
+<option value="3" data-origPos="R_3">Tienen en comun el uso de alguna tecnica analitica formal o informal normalmente durante la etapa de gestion de requisitos y de diseno del proyecto.</option>
+<option value="6" data-origPos="R_6">Es el tipo de revision mas formal, donde el documento bajo inspeccion es preparado y validado minuciosamente por revisores antes de la reunion.</option>
+</select>
+</td>
+<td> </td>
+</tr>
+<tr><td id="L_1" class="LeftItem">Automatizacion</td>
+<td class="RightItem">
+<select onchange="JsonEx.AlignSelects(1)" id="R_1">
+<option value="-1">???</option>
+<option value="1" data-origPos="R_1">Unica manera de repetir todas las pruebas sobre sistemas complejos y grandes.</option>
+<option value="4" data-origPos="R_4">Se caracteriza porque el autor del documento bajo revision va guiando al resto de participantes a traves del documento exponiendo sus ideas.</option>
+<option value="2" data-origPos="R_2">Es el responsable de identificar y definir las pruebas requeridas.</option>
+<option value="0" data-origPos="R_0">Mala conducta de una funcion, atributo o caracteristica previamente correctos.</option>
+<option value="5" data-origPos="R_5">Son una estrategia de pruebas estructurales cuyo objetivo es probar cada camino de la ejecucion independientemente.</option>
+<option value="3" data-origPos="R_3">Tienen en comun el uso de alguna tecnica analitica formal o informal normalmente durante la etapa de gestion de requisitos y de diseno del proyecto.</option>
+<option value="6" data-origPos="R_6">Es el tipo de revision mas formal, donde el documento bajo inspeccion es preparado y validado minuciosamente por revisores antes de la reunion.</option>
+</select>
+</td>
+<td> </td>
+</tr>
+<tr><td id="L_2" class="LeftItem">Analista de pruebas</td>
+<td class="RightItem">
+<select onchange="JsonEx.AlignSelects(2)" id="R_2">
+<option value="-1">???</option>
+<option value="1" data-origPos="R_1">Unica manera de repetir todas las pruebas sobre sistemas complejos y grandes.</option>
+<option value="4" data-origPos="R_4">Se caracteriza porque el autor del documento bajo revision va guiando al resto de participantes a traves del documento exponiendo sus ideas.</option>
+<option value="2" data-origPos="R_2">Es el responsable de identificar y definir las pruebas requeridas.</option>
+<option value="0" data-origPos="R_0">Mala conducta de una funcion, atributo o caracteristica previamente correctos.</option>
+<option value="5" data-origPos="R_5">Son una estrategia de pruebas estructurales cuyo objetivo es probar cada camino de la ejecucion independientemente.</option>
+<option value="3" data-origPos="R_3">Tienen en comun el uso de alguna tecnica analitica formal o informal normalmente durante la etapa de gestion de requisitos y de diseno del proyecto.</option>
+<option value="6" data-origPos="R_6">Es el tipo de revision mas formal, donde el documento bajo inspeccion es preparado y validado minuciosamente por revisores antes de la reunion.</option>
+</select>
+</td>
+<td> </td>
+</tr>
+<tr><td id="L_3" class="LeftItem">Estrategia analitica</td>
+<td class="RightItem">
+<select onchange="JsonEx.AlignSelects(3)" id="R_3">
+<option value="-1">???</option>
+<option value="1" data-origPos="R_1">Unica manera de repetir todas las pruebas sobre sistemas complejos y grandes.</option>
+<option value="4" data-origPos="R_4">Se caracteriza porque el autor del documento bajo revision va guiando al resto de participantes a traves del documento exponiendo sus ideas.</option>
+<option value="2" data-origPos="R_2">Es el responsable de identificar y definir las pruebas requeridas.</option>
+<option value="0" data-origPos="R_0">Mala conducta de una funcion, atributo o caracteristica previamente correctos.</option>
+<option value="5" data-origPos="R_5">Son una estrategia de pruebas estructurales cuyo objetivo es probar cada camino de la ejecucion independientemente.</option>
+<option value="3" data-origPos="R_3">Tienen en comun el uso de alguna tecnica analitica formal o informal normalmente durante la etapa de gestion de requisitos y de diseno del proyecto.</option>
+<option value="6" data-origPos="R_6">Es el tipo de revision mas formal, donde el documento bajo inspeccion es preparado y validado minuciosamente por revisores antes de la reunion.</option>
+</select>
+</td>
+<td> </td>
+</tr>
+<tr><td id="L_4" class="LeftItem">Walkthrough</td>
+<td class="RightItem">
+<select onchange="JsonEx.AlignSelects(4)" id="R_4">
+<option value="-1">???</option>
+<option value="1" data-origPos="R_1">Unica manera de repetir todas las pruebas sobre sistemas complejos y grandes.</option>
+<option value="4" data-origPos="R_4">Se caracteriza porque el autor del documento bajo revision va guiando al resto de participantes a traves del documento exponiendo sus ideas.</option>
+<option value="2" data-origPos="R_2">Es el responsable de identificar y definir las pruebas requeridas.</option>
+<option value="0" data-origPos="R_0">Mala conducta de una funcion, atributo o caracteristica previamente correctos.</option>
+<option value="5" data-origPos="R_5">Son una estrategia de pruebas estructurales cuyo objetivo es probar cada camino de la ejecucion independientemente.</option>
+<option value="3" data-origPos="R_3">Tienen en comun el uso de alguna tecnica analitica formal o informal normalmente durante la etapa de gestion de requisitos y de diseno del proyecto.</option>
+<option value="6" data-origPos="R_6">Es el tipo de revision mas formal, donde el documento bajo inspeccion es preparado y validado minuciosamente por revisores antes de la reunion.</option>
+</select>
+</td>
+<td> </td>
+</tr>
+<tr><td id="L_5" class="LeftItem">Pruebas de caminos</td>
+<td class="RightItem">
+<select onchange="JsonEx.AlignSelects(5)" id="R_5">
+<option value="-1">???</option>
+<option value="1" data-origPos="R_1">Unica manera de repetir todas las pruebas sobre sistemas complejos y grandes.</option>
+<option value="4" data-origPos="R_4">Se caracteriza porque el autor del documento bajo revision va guiando al resto de participantes a traves del documento exponiendo sus ideas.</option>
+<option value="2" data-origPos="R_2">Es el responsable de identificar y definir las pruebas requeridas.</option>
+<option value="0" data-origPos="R_0">Mala conducta de una funcion, atributo o caracteristica previamente correctos.</option>
+<option value="5" data-origPos="R_5">Son una estrategia de pruebas estructurales cuyo objetivo es probar cada camino de la ejecucion independientemente.</option>
+<option value="3" data-origPos="R_3">Tienen en comun el uso de alguna tecnica analitica formal o informal normalmente durante la etapa de gestion de requisitos y de diseno del proyecto.</option>
+<option value="6" data-origPos="R_6">Es el tipo de revision mas formal, donde el documento bajo inspeccion es preparado y validado minuciosamente por revisores antes de la reunion.</option>
+</select>
+</td>
+<td> </td>
+</tr>
+<tr><td id="L_6" class="LeftItem">Inspeccion</td>
+<td class="RightItem">
+<select onchange="JsonEx.AlignSelects(6)" id="R_6">
+<option value="-1">???</option>
+<option value="1" data-origPos="R_1">Unica manera de repetir todas las pruebas sobre sistemas complejos y grandes.</option>
+<option value="4" data-origPos="R_4">Se caracteriza porque el autor del documento bajo revision va guiando al resto de participantes a traves del documento exponiendo sus ideas.</option>
+<option value="2" data-origPos="R_2">Es el responsable de identificar y definir las pruebas requeridas.</option>
+<option value="0" data-origPos="R_0">Mala conducta de una funcion, atributo o caracteristica previamente correctos.</option>
+<option value="5" data-origPos="R_5">Son una estrategia de pruebas estructurales cuyo objetivo es probar cada camino de la ejecucion independientemente.</option>
+<option value="3" data-origPos="R_3">Tienen en comun el uso de alguna tecnica analitica formal o informal normalmente durante la etapa de gestion de requisitos y de diseno del proyecto.</option>
+<option value="6" data-origPos="R_6">Es el tipo de revision mas formal, donde el documento bajo inspeccion es preparado y validado minuciosamente por revisores antes de la reunion.</option>
+</select>
+</td>
+<td> </td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+
+<button id="CheckButton2" class="FuncButton" onclick="CheckAnswers()">&#160;Check&#160;</button>
+
+</div>
+
+</div>
+
+<div class="Feedback" id="FeedbackDiv">
+<div class="FeedbackText" id="FeedbackContent"></div>
+<button id="FeedbackOKButton" class="FuncButton" onclick="HideFeedback(); return false;">&#160;OK&#160;</button>
+</div>
+
+<!-- BeginBottomNavButtons -->
+
+
+<div class="NavButtonBar" id="BottomNavBar">
+
+
+<button class="NavButton" onclick="history.back(); return false;">&lt;=</button>
+
+
+
+<button class="NavButton" onclick="location='index.htm'; return false;"> Index </button>
+
+
+
+<button class="NavButton" onclick="location='llenarespaciosvacios.htm'; return false;">=&gt;</button>
+
+
+</div>
+
+
+
+<!-- EndBottomNavButtons -->
+
+<!-- BeginSubmissionForm -->
+
+<!-- EndSubmissionForm -->
+
+</body>
+
+</html>
